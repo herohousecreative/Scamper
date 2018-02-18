@@ -1,0 +1,42 @@
+bookcontents1.php:      	$delfilesql="delete from BOOKCONTENTS where fcontentid=".$delfile;
+bookcontents1.php:      	$delfilesql1="delete from BOOKCONTENTINFO where fcontentid=".$delfile;
+bookcontents.php:      	$delfilesql="delete from BOOKCONTENTS where fcontentid=".$delfile;
+bookcontents.php:      	$delfilesql1="delete from BOOKCONTENTINFO where fcontentid=".$delfile;
+bookdetail1.php:} elseif ($deleteprocess) {
+bookdetail1.php:  $sql="delete from PROGRESS where primarykey = $deleteprocess";
+bookdetail1.php:  $deleteprocess == null;
+bookdetail1.php:		<h3>Progress information has been deleted successfully</h3>
+bookdetail1.php:  echo "<TD><a href=\"",$PHP_SELF,"?bookkey=" . $bookkey . "&deleteprocess=",$row["primarykey"],"\">Delete</a></TD>\n";  
+bookdetail_old.php:} elseif ($deleteprocess) {
+bookdetail_old.php:  $sql="delete from PROGRESS where primarykey = $deleteprocess";
+bookdetail_old.php:  $deleteprocess == null;
+bookdetail_old.php:		<h3>Progress information has been deleted successfully</h3>
+bookdetail_old.php:  echo "<TD><a href=\"",$PHP_SELF,"?bookkey=" . $bookkey . "&deleteprocess=",$row["primarykey"],"\">Delete</a></TD>\n";  
+bookdetail.php:} elseif ($deleteprocess) {
+bookdetail.php:  $sql="delete from PROGRESS where primarykey = $deleteprocess";
+bookdetail.php:  $deleteprocess == null;
+bookdetail.php:		<h3>Progress information has been deleted successfully</h3>
+bookdetail.php:  echo "<TD><a href=\"",$PHP_SELF,"?bookkey=" . $bookkey . "&deleteprocess=",$row["primarykey"],"\">Delete</a></TD>\n";  
+pendingrequestdetail.php:		<td colspan=2 align="center"><input type=submit name="delete_request" value="Decline Request"></td>
+pendingrequestdetail.php:} elseif ($_POST[delete_request]) {
+priority.092205.php:      $delreqsql="delete from BSRELATION where primarykey=".$delrequest;
+priority.112305.php:      $delreqsql="delete from BSRELATION where primarykey=".$delrequest;
+priority1.php:      $delreqsql="delete from BSRELATION where primarykey=".$delrequest;
+priority-next.php:      $delreqsql="delete from BSRELATION where primarykey=".$delrequest;
+priority_old2.php:      $delreqsql="delete from BSRELATION where primarykey=".$delrequest;
+priority-old.php:      $delreqsql="delete from BSRELATION where primarykey=".$delrequest;
+priority.php:      $delreqsql="delete from BSRELATION where primarykey=".$delrequest;
+priority-test.php:      $delreqsql="delete from BSRELATION where primarykey=".$delrequest;
+rfbpriority.092105.php:      $delreqsql="delete from BSRELATION where primarykey=".$delrequest;
+rfbpriority.120305.php:      $delreqsql="delete from BSRELATION where primarykey=".$delrequest;
+rfbpriority1.php:      $delreqsql="delete from BSRELATION where primarykey=".$delrequest;
+rfbpriority_old2.php:      $delreqsql="delete from BSRELATION where primarykey=".$delrequest;
+rfbpriority_old4.php:      $delreqsql="delete from BSRELATION where primarykey=".$delrequest;
+rfbpriority.php:      $delreqsql="delete from BSRELATION where primarykey=".$delrequest;
+rfbpriority_test.php:      $delreqsql="delete from BSRELATION where primarykey=".$delrequest;
+studentdetail1.php:      $delreqsql="delete from BSRELATION where primarykey=".$delrequest;
+studentdetail_old.php://if ($method=='delete') {
+studentdetail_old.php:// $result=bs_delete($bskey)
+studentdetail.php:      $delreqsql="delete from BSRELATION where primarykey=".$delrequest;
+user.php:function bs_delete($bskey) {
+user.php:  $sql="delete from BSRELATION where primarykey = $bskey";

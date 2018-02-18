@@ -1,0 +1,9 @@
+466c466
+< function select_rfbpriority($semester) {
+---
+> function select_rfbpriority($semester,$nextsemester) {
+474c474,475
+<    . "and S.reqsemester = '" . $semester . "' and D.primarykey=S.studentkey and fcheckcomplete <> 1 order by B.fpriority,B.ftitle";
+---
+>    . "and (S.reqsemester = '" . $semester .  "' or  S.reqsemester = '" . $nextsemester .  "') "
+>    . "and D.primarykey=S.studentkey and fcheckcomplete <> 1 order by B.fpriority,B.ftitle";

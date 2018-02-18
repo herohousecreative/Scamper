@@ -1,0 +1,15 @@
+SELECT A.*,B.ftitle,S.firstname,S.lastname from STUDENTS S, BSRELATION as A LEFT JOIN BOOKS as B on A.bookkey=B.FTTEBOOKID WHERE A.studentkey = S.primarykey and A.primarykey=1009
+SELECT A.*,B.ftitle,S.firstname,S.lastname,B.frfbdnumber,R.reqdate,R.course
+                from STUDENTS S,BOOKREQUEST R, BSRELATION as A LEFT JOIN BOOKS as B on A.bookkey=B.FTTEBOOKID
+                WHERE A.studentkey = S.primarykey and R.studentid = A.studentkey and R.title = B.ftitle 
+		and R.filetypes='RFB' and A.primarykey=1009
+SELECT A.*,B.ftitle,S.firstname,S.lastname,B.frfbdnumber,R.reqdate,R.course
+                from BSRELATION as A LEFT JOIN (BOOKS as B,STUDENTS S,BOOKREQUEST R)
+                on (A.bookkey=B.FTTEBOOKID and A.studentkey = S.primarykey and R.studentid = A.studentkey)
+                WHERE R.filetypes='RFB' and A.primarykey=1025
+SELECT A.*,R.reqdate,R.course
+                from BSRELATION as A LEFT JOIN BOOKREQUEST R on R.studentid = A.studentkey
+	where A.primarykey=1009
+SELECT A.*,R.reqdate,R.course
+                from BSRELATION as A , BOOKREQUEST R 
+		where A.primarykey=1009 and R.studentid = A.studentkey

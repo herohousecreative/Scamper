@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE invoice 
+[
+<!ENTITY message "Thank you for your purchases!"> 
+<!ENTITY terms SYSTEM "terms.xml"> 
+]> 
+
+<invoice> 
+
+      <customer> 
+            <name>Joe Wannabe</name> 
+            <address> 
+                  <line>23, Great Bridge Road</line> 
+                  <line>Bombay, MH</line> 
+                  <line>India</line> 
+            </address> 
+      </customer> 
+
+      <date>2001-09-15</date> 
+
+      <reference>75-848478-98</reference> 
+
+      <items> 
+            <item cid="AS633225"> 
+                  <desc>Oversize tennis racquet</desc> 
+                  <price>235.00</price> 
+                  <quantity>1</quantity> 
+                  <subtotal>235.00</subtotal> 
+            </item> 
+
+            <item cid="GT645"> 
+                  <desc>Championship tennis balls (can)</desc> 
+                  <price>9.99</price> 
+                  <quantity>4</quantity> 
+                  <subtotal>39.96</subtotal> 
+            </item> 
+
+            <item cid="U73472"> 
+                  <desc>Designer gym bag</desc> 
+                  <price>139.99</price> 
+                  <quantity>1</quantity> 
+                  <subtotal>139.99</subtotal> 
+            </item> 
+
+            <item cid="AD848383"> 
+                  <desc>Custom-fitted sneakers</desc> 
+                  <price>349.99</price> 
+                  <quantity>1</quantity> 
+                  <subtotal>349.99</subtotal> 
+            </item> 
+      </items> 
+
+      <?php displayTotal(); ?> 
+
+      <delivery>Next-day air</delivery> 
+
+      &terms; 
+
+      &message; 
+
+</invoice>

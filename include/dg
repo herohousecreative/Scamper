@@ -1,0 +1,35 @@
+tteuser.php:  $sql="UPDATE MEMBERS set FMEMFNAME='$FMEMFNAME', FMEMLNAME='$FMEMLNAME', " .
+tteuser.php:  $sql="UPDATE MEMBERS set FORGNAME='$FORGNAME', FORGADDRESS1='$FORGADDRESS1', " .
+user022806.php:$sql="UPDATE BOOKS SET	ftitle='$title',
+user022806.php:  $sql="UPDATE STUDENTS set sid='$sid', firstname='$firstname', " .
+user022806.php:  $sql="UPDATE BOOKS set fpriority = $priority ".
+user.092105.php:$sql="UPDATE BOOKS SET	ftitle='$title',
+user.092105.php:  $sql="UPDATE STUDENTS set sid='$sid', firstname='$firstname', " .
+user.092105.php:  $sql="UPDATE BOOKS set fpriority = $priority ".
+user.101205.php:$sql="UPDATE BOOKS SET	ftitle='$title',
+user.101205.php:  $sql="UPDATE STUDENTS set sid='$sid', firstname='$firstname', " .
+user.101205.php:  $sql="UPDATE BOOKS set fpriority = $priority ".
+user.112905.php:$sql="UPDATE BOOKS SET	ftitle='$title',
+user.112905.php:  $sql="UPDATE STUDENTS set sid='$sid', firstname='$firstname', " .
+user.112905.php:  $sql="UPDATE BOOKS set fpriority = $priority ".
+user1.php:$sql="UPDATE BOOKS SET	ftitle='$title',
+user1.php:  $sql="UPDATE STUDENTS set sid='$sid', firstname='$firstname', " .
+user1.php:  $sql="UPDATE BOOKS set fpriority = $priority ".
+user2.php:$sql="UPDATE BOOKS SET	ftitle='$title',
+user2.php:  $sql="UPDATE STUDENTS set sid='$sid', firstname='$firstname', " .
+user2.php:  $sql="UPDATE BOOKS set fpriority = $priority ".
+user_old.php:$sql="UPDATE BOOKS SET	ftitle='$title',
+user_old.php:  $sql="UPDATE STUDENTS set sid='$sid', firstname='$firstname', " .
+user_old.php:  $sql="UPDATE BOOKS set fpriority = $priority ".
+user_passwd.php:  //$sql="UPDATE USERS set password='$newpwd' where username=".$REMOTE_USER;
+user_passwd.php:$sql="UPDATE BOOKS SET	ftitle='$title',
+user_passwd.php:  $sql="UPDATE STUDENTS set sid='$sid', firstname='$firstname', " .
+user_passwd.php:  $sql="UPDATE BOOKS set fpriority = $priority ".
+user.php:$sql="UPDATE BOOKS SET	ftitle='$title',
+user.php:  $sql="UPDATE STUDENTS set sid='$sid', firstname='$firstname', " .
+user.php:  $sql="UPDATE BOOKS set fpriority = $priority ".
+user_pwd_test.php:  $sql="UPDATE USERS set password='$newpwd'".
+user_pwd_test.php:  $sql="UPDATE BOOKS set fpriority = $priority ".
+user_pwd_test.php:$sql="UPDATE BOOKS SET	ftitle='$title',
+user_pwd_test.php:  $sql="UPDATE STUDENTS set sid='$sid', firstname='$firstname', " .
+user_pwd_test.php:  $sql="UPDATE BOOKS set fpriority = $priority ".

@@ -1,0 +1,93 @@
+32,44c32,33
+< 	//$sql = "SELECT A.*,B.ftitle from BSRELATION as A LEFT JOIN BOOKS as B on A.bookkey=B.FTTEBOOKID 
+< 	//	WHERE primarykey=".$requestid;
+< 	//$sql = "SELECT A.*,B.ftitle,S.firstname,S.lastname,B.frfbdnumber 
+< 	//	from STUDENTS S, BSRELATION as A LEFT JOIN BOOKS as B on A.bookkey=B.FTTEBOOKID 
+< 	//	WHERE A.studentkey = S.primarykey and A.primarykey=".$requestid;
+< 	//$sql = "SELECT A.*,B.ftitle,S.firstname,S.lastname,B.frfbdnumber,R.reqdate,R.course
+<          //       from STUDENTS S,BOOKREQUEST R, BSRELATION as A LEFT JOIN BOOKS as B on A.bookkey=B.FTTEBOOKID
+<           //      WHERE A.studentkey = S.primarykey and R.studentid = A.studentkey and R.title = B.ftitle
+<            //     and R.filetypes='RFB' and A.primarykey=".$requestid;
+< 	$sql = "SELECT A.*,B.ftitle,S.firstname,S.lastname,B.frfbdnumber,R.reqdate,R.course
+<                 from BSRELATION as A LEFT JOIN (BOOKS as B,STUDENTS S,BOOKREQUEST R)
+<                 on (A.bookkey=B.FTTEBOOKID and A.studentkey = S.primarykey and R.studentid = A.studentkey)
+<                 WHERE R.filetypes='RFB' and A.primarykey=".$requestid;
+---
+> 	$sql = "SELECT A.*,B.ftitle from BSRELATION as A LEFT JOIN BOOKS as B on A.bookkey=B.FTTEBOOKID 
+> 		WHERE primarykey=".$requestid;
+46a36
+> 
+57,59d46
+< 		<td>Requested By</td>
+< 		<td><a href="studentdetail.php?studentkey='.$row[studentkey].'">'.$row["firstname"]." ".$row["lastname"].'</a></td>
+< 		</tr>
+61,62c48,49
+< 		<td>Date Requested</td>
+< 		<td><input type="text" size="15" readonly="true" value="'.$row[reqdate].'"></td>
+---
+> 		<td>Book Title</td>
+> 		<td><a href="bookdetail.php?bookkey='.$row[bookkey].'">'.$row[ftitle].'</a></td>
+69,70c56,57
+< 		<td>Course </td>
+< 		<td><input type="text" size="15" readonly="true" value="'.$row[course].'"></td>
+---
+> 		<td>Promise Date</td>
+> 		<td><input type="text" size="10" name="promisedate" value="'.$row[promisedate].'"> (YYYY-MM-DD)</td>
+73,74c60,61
+< 		<td>Book Title</td>
+< 		<td><a href="bookdetail1.php?bookkey='.$row[bookkey].'">'.$row[ftitle].'</a>( link to bookdetails page )</td>
+---
+> 		<td>First Contact Date</td>
+> 		<td><input type="text" size="10" name="called1" value="'.$row[called1].'"> (YYYY-MM-DD)</td>
+77,78c64,65
+< 		<td>RFBD Number</td>
+< 		<td><input type="text" size="15" readonly="true" value="'.$row[frfbdnumber].'"></td>
+---
+> 		<td>Second Contact Date</td>
+> 		<td><input type="text" size="10" name="called2" value="'.$row[called2].'"> (YYYY-MM-DD)</td>
+81,82c68,69
+< 		<td>RFBD Order Date</td>
+< 		<td><input type="text" size="15" readonly="true" value="'.$row[frfbd_ordered].'"> (YYYY-MM-DD)</td>
+---
+> 		<td>Third Contact Date</td>
+> 		<td><input type="text" size="10" name="called3" value="'.$row[called3].'"> (YYYY-MM-DD)</td>
+85,86c72,73
+< 		<td>RFBD Received Date</td>
+< 		<td><input type="text" size="15" readonly="true" value="'.$row[frfbd_received].'"> (YYYY-MM-DD)</td>
+---
+> 		<td>RFBD Book Student Pick Up Date</td>
+> 		<td><input type="text" size="10" name="pickedup" value="'.$row[pickedup].'"> (YYYY-MM-DD)</td>
+89,90c76,77
+< 		<td>Student First Contact Date)</td>
+< 		<td><input type="text" size="15" name="called1" value="'.$row[called1].'"> (YYYY-MM-DD)</td>
+---
+> 		<td>RFBD Book Student Return Date</td>
+> 		<td><input type="text" size="10" name="returned" value="'.$row[returned].'"> (YYYY-MM-DD)</td>
+93,94c80,81
+< 		<td>Student Second Contact Date</td>
+< 		<td><input type="text" size="15" name="called2" value="'.$row[called2].'"> (YYYY-MM-DD)</td>
+---
+> 		<td>Book Returned to RFBD</td>
+> 		<td><input type="text" size="10" name="returnedtorfbd" value="'.$row[returnedtorfbd].'"> (YYYY-MM-DD)</td>
+97,113c84
+< 		<td>Student Third Contact Date</td>
+< 		<td><input type="text" size="15" name="called3" value="'.$row[called3].'"> (YYYY-MM-DD)</td>
+< 		</tr>
+< 		<tr>
+< 		<td>Student Pick Up Date</td>
+< 		<td><input type="text" size="15" name="pickedup" value="'.$row[pickedup].'"> (YYYY-MM-DD)</td>
+< 		</tr>
+< 		<tr>
+< 		<td>Student Return Date</td>
+< 		<td><input type="text" size="15" name="returned" value="'.$row[returned].'"> (YYYY-MM-DD)</td>
+< 		</tr>
+< 		<tr>
+< 		<td>Return to RFBD Date</td>
+< 		<td><input type="text" size="15" name="returnedtorfbd" value="'.$row[returnedtorfbd].'"> (YYYY-MM-DD)</td>
+< 		</tr>
+< 		<tr>
+< 		<td valign=top>Notes (from Student Request)<br><i>These notes are viewable by student in GMB</i></td>
+---
+> 		<td valign=top>Notes (about Student Request)<br><i>These notes are viewable by student in GMB</i></td>
+127a99
+> 

@@ -1,0 +1,14 @@
+bookdetail1.php:	$sql1="select pickedup, returned from BSRELATION where primarykey=".$requestkey;
+bookdetail.php:	$sql1="select pickedup, returned from BSRELATION where primarykey=".$requestkey;
+bookstore.php:      $delreqsql="delete from BSRELATION where primarykey=".$delrequest;
+display_student.php:	$sql = "SELECT * FROM BSRELATION WHERE studentkey = $student_key";
+pendingrequestdetail.php:			$bs_sql = "INSERT INTO BSRELATION SET bookkey=".$bookid.", studentkey=".$row[studentid].", 
+priority1.php:      $delreqsql="delete from BSRELATION where primarykey=".$delrequest;
+priority.php:      $delreqsql="delete from BSRELATION where primarykey=".$delrequest;
+requestdetail1.php:                from BSRELATION as A LEFT JOIN (BOOKS as B,STUDENTS S,BOOKREQUEST R)
+requestdetail.php:	$sql = "SELECT A.*,B.ftitle from BSRELATION as A LEFT JOIN BOOKS as B on A.bookkey=B.FTTEBOOKID 
+rfbpriority1.php:      $delreqsql="delete from BSRELATION where primarykey=".$delrequest;
+rfbpriority.php:      $delreqsql="delete from BSRELATION where primarykey=".$delrequest;
+studentdetail.php:      $delreqsql="delete from BSRELATION where primarykey=".$delrequest;
+user.php:  $sql="SELECT R.primarykey ,S.primarykey as currentstudent,S.sid,S.firstname,S.lastname,S.telephone,S.email from BSRELATION R, STUDENTS S where R.bookkey = $bookkey and R.reqsemester = '" . $semester ."' and R.studentkey = S.primarykey order by S.lastname";
+user.php:   . "from BOOKS B, BSRELATION S "

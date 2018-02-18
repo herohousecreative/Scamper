@@ -1,0 +1,7 @@
+user.092105.php:  $sql="SELECT requestid, title, filetypes, author1ln, author1fn FROM BOOKREQUEST
+user.101205.php:  $sql="SELECT requestid, title, filetypes, author1ln, author1fn FROM BOOKREQUEST
+user.112905.php:  $sql="SELECT requestid, title, filetypes, author1ln, author1fn FROM BOOKREQUEST
+user1.php:  $sql="SELECT requestid, title, filetypes, author1ln, author1fn FROM BOOKREQUEST
+user1.php:  $sql="select R.primarykey as reqid,S.primarykey as currentstudent,S.sid,S.firstname,S.lastname,S.telephone,S.email,T.reqdate from BSRELATION R, STUDENTS S, BOOKREQUEST T, BOOKS B where R.studentkey = T.studentid and R.studentkey = S.primarykey and B.FTTEBOOKID=R.bookkey and B.ftitle = T.title and R.primarykey = $requestkey order by S.lastname";
+user1.php://SELECT R.primarykey ,S.primarykey as currentstudent,S.sid,S.firstname,S.lastname,S.telephone,S.email,T.reqdate from BSRELATION R, STUDENTS S, BOOKREQUEST T where R.studentkey = T.studentid and R.studentkey = S.primarykey and R.primarykey = $requestkey order by S.lastname";
+user.php:  $sql="SELECT requestid, title, filetypes, author1ln, author1fn FROM BOOKREQUEST
